@@ -17,12 +17,57 @@ namespace NamespaceDemo
 
         }
     }
+
+
+    abstract class abstractexample
+    {
+        int a = 5;
+        int b = 10;
+        public void printa()
+        {
+            Console.WriteLine("value of a : " + a);
+        }
+
+        public virtual void printb()
+        {
+            Console.WriteLine("value of b: " +b);
+        }
+    }
+
+
+    class sample : abstractexample
+    {
+        int b = 20;
+
+        public override void printb()
+        {
+            Console.WriteLine("value of abstractexample b: " + base.b);
+
+            Console.WriteLine("value of sample b: " + b);
+        }
+    }
+
+    class sample2 : abstractexample
+    {
+
+    }
     class AbstractClassExample
     {
 
         public static void Main ()
         {
+            //stattic class example
+            //example.ex();
 
+           
+            //Abstract class example
+            sample s = new sample();
+            s.printa();
+            s.printb();
+
+            sample2 s2 = new sample2();
+            s2.printa();
+            s2.printb();
         }
     }
 }
