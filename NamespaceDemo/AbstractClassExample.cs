@@ -41,7 +41,7 @@ namespace NamespaceDemo
 
         public override void printb()
         {
-            Console.WriteLine("value of abstractexample b: " + base.b);
+            //Console.WriteLine("value of abstractexample b: " + base.b);
 
             Console.WriteLine("value of sample b: " + b);
         }
@@ -59,15 +59,34 @@ namespace NamespaceDemo
             //stattic class example
             //example.ex();
 
-           
-            //Abstract class example
-            sample s = new sample();
-            s.printa();
-            s.printb();
 
-            sample2 s2 = new sample2();
-            s2.printa();
-            s2.printb();
+            //Abstract class example
+            //sample s = new sample();
+            //s.printa();
+            //s.printb();
+
+            //sample2 s2 = new sample2();
+            //s2.printa();
+            //s2.printb();
+
+            checked
+            {
+
+                int a = Int32.MaxValue;
+                Console.WriteLine("write value of a" + a);
+                a++;
+                Console.WriteLine("write value of a" + a);
+                a++;
+                Console.WriteLine("write value of a" + a);
+
+            }
+
+            Console.Read();
+
         }
+
+        
+        
     }
+
 }
