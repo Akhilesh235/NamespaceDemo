@@ -10,7 +10,13 @@ namespace NamespaceDemo
     class parent { } // if you put sealed class on parent, Child class cannot inherit it
     sealed class child : parent { } // if you put sealed class on child, below example class cannot inherit it
 
-    class example : child { }
+    static class example
+    {
+        public static void ex()
+        {
+
+        }
+    }
     class AbstractClassExample
     {
 
