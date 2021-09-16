@@ -1,111 +1,133 @@
-﻿using System;
-//using NamespaceDemo.Parent
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+////using NamespaceDemo.Parent
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace NamespaceDemo                 // how to have oops in namespace
-{
-    struct structexaple
-    {
-        int a;
-        int b;
-        long c;
-    }
+//namespace NamespaceDemo                 // how to have oops in namespace
+//{
+//    //struct structexaple
+//    //{
+//    //    int a;
+//    //    int b;
+//    //    long c;
+//    //}
 
+//    class parent { }
 
-    class Program          // default is internal
-    {
-        static void Main(string[] args)
-        {
-            ////NamespaceDemo.Parent ParentClass
+//    class child : parent { }
 
-            //// SizeOf Operator
-
-            //int i = 5;
-            //int[] arr = new int[10];
-            ////structexaple ex = new structexaple();
-
-            //Console.WriteLine( "length of arr : " + arr.Length);
-
-            //Console.WriteLine("int : " + sizeof(int));
-            //Console.WriteLine("long : " + sizeof(long));
-            //Console.WriteLine("char : " + sizeof(char));
-            //Console.WriteLine("double : " + sizeof(double));
-            //Console.ReadLine();
+//    class example { }
 
 
-            // as operator - reference type conversion
+//    class Program          // default is internal
+//    {
+//        static void Main(string[] args)
+//        {
+//            parent p = new parent();
+//            child ch = new child();
+//            example ex = new example();
 
-            //string str1 = "Session ";
-            //object obj = "sessionobject";
+//            Console.WriteLine(p is object);         // all datatypes can be convertd to an object --> typecasting
+//            Console.WriteLine(p is object);
+//            Console.WriteLine(p is object);
 
-            //var n = str1 as object;
-            //var m = obj as string;
-            //var p = obj as a;
-            object conva = ainstance as object
+//            Console.WriteLine(p is object);
+//            Console.WriteLine(p is object);
+//            Console.WriteLine(p is object);
 
-                if (conva is b)
-            {
-                //b conva1 = conva as b;
-                Console.WriteLine("Can be converted to b");
-            }
-            else
-            {
-                Console.WriteLine("Cannot be converted to b");
-            }
-                if (conva is args conva1)
-            {
-                conva.print();
-                Console.WriteLine("can be converted to a");
-            }
+//            Console.WriteLine(p is object);
+//            Console.WriteLine(p is object);
+//            Console.WriteLine(p is object);
 
-            //if (n!= null)
-            //{
-            //    Console.WriteLine("Successfully converted str1");
-            //}
+//            ////NamespaceDemo.Parent ParentClass
 
-            //if (m != null)
-            //{
-            //    Console.WriteLine("Successfully converted obj");
-            //}
+//            //// SizeOf Operator
 
-            //else
-            //{
-            //    Console.WriteLine("conversion failed for obj");
-            //}
-            Console.Read();
+//            //int i = 5;
+//            //int[] arr = new int[10];
+//            ////structexaple ex = new structexaple();
 
-        }
-    }
-}
+//            //Console.WriteLine( "length of arr : " + arr.Length);
+
+//            //Console.WriteLine("int : " + sizeof(int));
+//            //Console.WriteLine("long : " + sizeof(long));
+//            //Console.WriteLine("char : " + sizeof(char));
+//            //Console.WriteLine("double : " + sizeof(double));
+//            //Console.ReadLine();
 
 
-namespace NamespaceDemo.Parent
-{
-    class ParentClass
-    {
-        void print()
-        {
-            Console.WriteLine(" in parent namespace"); 
-        }
-    }
+//            // as operator - reference type conversion
 
-    class  PrivateParentClass
-    {
-        void print()
-        {
-            Console.WriteLine(" in private parent class Namespace");
-        }
-    }
-}
+//            //string str1 = "Session ";
+//            //object obj = "sessionobject";
 
-namespace NamespaceDemo.Child
-{
-    class a
-    {
-        ParentClass pc = new ParentClass();
-    }
-}
+//            //var n = str1 as object;
+//            //var m = obj as string;
+//            //var p = obj as a;
+//            //object conva = ainstance as object
+
+//            //    if (conva is b)
+//            //{
+//            //    //b conva1 = conva as b;
+//            //    Console.WriteLine("Can be converted to b");
+//            //}
+//            //else
+//            //{
+//            //    Console.WriteLine("Cannot be converted to b");
+//            //}
+//            //    if (conva is args conva1)
+//            //{
+//            //    conva.print();
+//            //    Console.WriteLine("can be converted to a");
+//            //}
+
+//            //if (n!= null)
+//            //{
+//            //    Console.WriteLine("Successfully converted str1");
+//            //}
+
+//            //if (m != null)
+//            //{
+//            //    Console.WriteLine("Successfully converted obj");
+//            //}
+
+//            //else
+//            //{
+//            //    Console.WriteLine("conversion failed for obj");
+//            //}
+//            Console.Read();
+
+//        }
+//    }
+//}
+
+
+//namespace NamespaceDemo.Parent
+//{
+//    class ParentClass
+//    {
+//        void print()
+//        {
+//            Console.WriteLine(" in parent namespace"); 
+//        }
+//    }
+
+//    class  PrivateParentClass
+//    {
+//        void print()
+//        {
+//            Console.WriteLine(" in private parent class Namespace");
+//        }
+//    }
+//}
+
+//namespace NamespaceDemo.Child
+//{
+//    class a
+//    {
+//        ParentClass pc = new ParentClass();
+//    }
+//}
 
